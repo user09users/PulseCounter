@@ -1,0 +1,59 @@
+@use "/src/sass/base/variables.scss";
+
+.promo {
+    background: url("/src/img/main.bg.jpeg") center center / cover no-repeat;
+    min-height: 650px;
+    padding-top: 21px 0 93px 0;
+
+    &__wrapper {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__subheader {
+        margin-top: 17px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        margin-top: 65px;
+        width: 424px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 136px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        margin-top: 18px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
