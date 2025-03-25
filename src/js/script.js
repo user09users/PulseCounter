@@ -19,6 +19,12 @@ document.querySelector('.next').addEventListener('click', () => {
     slider.goTo('next');
 });
 
+$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
+    $(this)
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_activee')
+        .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('active');
+});
+
 /* 
 $(document).ready(function () {
     $('.carousel__inner').slick({
