@@ -1,0 +1,40 @@
+.reviews {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    .reviews__title {
+        color: rgb(13, 13, 13);
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    &__people {
+        display: flex;
+        column-gap: 60px;
+        margin-top: 60px;
+
+        &__name {
+            color: rgb(13, 13, 13);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: left;
+        }
+
+        &__subtitle {
+            color: rgb(100, 100, 100);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: left;
+        }
+
+        &__comment {
+            margin-top: 10px;
+            color: rgb(13, 13, 13);
+        }
+    }
+
+}
