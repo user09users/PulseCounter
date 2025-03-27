@@ -1,23 +1,12 @@
 import "/src/sass/style.scss";
+import consultationButton from "./modal";
+import slider from "./slider";
+import pageUp from "./pageUp";
 
+slider();
+pageUp();
+consultationButton('[data-modal="consultation"]');
 
-const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: false,
-});
-
-
-document.querySelector('.prev').addEventListener('click', () => {
-    slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-    slider.goTo('next');
-});
 /*  
 $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
     $(this)
