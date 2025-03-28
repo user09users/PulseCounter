@@ -2,10 +2,12 @@ import "/src/sass/style.scss";
 import consultationButton from "./modal";
 import slider from "./slider";
 import pageUp from "./pageUp";
+import 'animate.css';
 
 slider();
 pageUp();
 consultationButton('[data-modal="consultation"]');
+new WOW().init();
 
 /*  
 $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {

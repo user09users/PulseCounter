@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.21",
     "postcss-pxtorem": "^6.1.0",
     "sass": "^1.86.0"
